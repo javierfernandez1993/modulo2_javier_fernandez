@@ -1,0 +1,20 @@
+.div{
+    flex-direction: column;
+  }
+
+.div:hover {
+  background-color: white;
+  color: black;
+}
+
+.div a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  padding: 12px 18px;
+  white-space: nowrap;
+}
+.changeColor{
+    background-color: blueviolet !important;
+    
+}
