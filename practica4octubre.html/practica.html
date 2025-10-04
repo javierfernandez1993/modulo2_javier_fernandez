@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #miDiv, .otroDiv {
+            border: 2px solid blue;
+            height: 300px;
+            width: 300px;
+        }
+        .green {
+            color: rgb(72, 163, 72);
+        }
+        .blue {
+            color: aqua;
+        }
+        .ok {
+            color: rgb(182, 31, 31);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>mi primer js</h1>
+    <div id="miDiv"></div>
+    <div class="otroDiv">pancho esta dormido</div>
+    
+</body>
+<script>
+// Código interno
+console.log("Hello world");
+let miDiv = document.getElementById("miDiv");
+console.log(miDiv);
+miDiv.textContent= "shiva tiene hambre";
+miDiv.classList.add("green");
+let otroDiv = document.getElementsByClassName("otroDiv");
+otroDiv[0].classList.add("blue");
+miDiv.classList.remove("green");
+//alert("esto es una alerta");
+//let res = confirm("¿quieres cambiar el color?")
+//console.log(res);
+//if (res){
+    //miDiv.classList.add("ok");
+//}
+let sid = prompt("hola, ¿tu quien eres?");
+console.log(sid);
+if (sid === "javier") {
+    console.log("hola, eres: " +sid);
+    miDiv.textContent = "muy bien javier, bienvenido";
+}
+</script>
+
+</html>
